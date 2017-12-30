@@ -9,6 +9,8 @@
 # production
 /build
 
+/php-api/vendor
+
 # misc
 .DS_Store
 .env.local

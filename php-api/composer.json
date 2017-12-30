@@ -1,0 +1,15 @@
+{
+    "name": "ibm/personalityinsightsapi",
+    "description": "PHP API implementation of Waton Personality Insights",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shahab Qamar",
+            "email": "sqamar@squiz.net"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "abraham/twitteroauth": "^0.7.4"
+    }
+}
