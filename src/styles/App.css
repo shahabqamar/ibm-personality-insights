@@ -1,0 +1,511 @@
+body {
+  height: 100%;
+  font-family: "Muli";
+  /* background-image: linear-gradient(
+    to top,
+    #d5d4d0 0%,
+    #d5d4d0 1%,
+    #eeeeec 31%,
+    #efeeec 75%,
+    #e9e9e7 100%
+  ); */
+}
+
+h1 {
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Philosopher";
+}
+
+p {
+  font-weight: 100;
+}
+
+.App {
+  padding-bottom: 3.5rem;
+}
+
+.badge {
+  border-radius: 2px;
+  font-weight: 100;
+}
+
+.hidden-load {
+  visibility: hidden;
+}
+.hidden-load.animated {
+  visibility: visible;
+}
+
+.app-banner {
+  background: transparent;
+}
+
+.app-banner small {
+  color: #aaa;
+}
+
+.app-banner a {
+  color: #888;
+  text-decoration: underline;
+}
+
+.app-banner a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar .fa {
+  padding: 5px;
+  background: #333;
+  border-radius: 3px;
+}
+
+.navbar-brand {
+  transition: all 0.3s;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.navbar-brand:hover {
+  transition: all 0.3s;
+  transform: scale(0.9);
+}
+
+.icon-back {
+  max-width: 20px;
+  margin-right: 7px;
+}
+
+.card {
+  transition: all 0.3s;
+  margin-bottom: 1rem;
+  transition: 0.25s all;
+  border: none;
+  border-radius: 0;
+}
+
+.card:hover {
+  transition: 0.25s all;
+  background: #333;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 20px 0px;
+}
+
+.card-raw-text:hover {
+  transition: all 0.3s;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #000000,
+    #434343
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #000000,
+    #434343
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card-facebook:hover {
+  transition: all 0.3s;
+  background: #1488cc; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2b32b2,
+    #1488cc
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card-twitter:hover {
+  transition: all 0.3s;
+  background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2f80ed,
+    #56ccf2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.card:hover a {
+  color: #fff;
+}
+
+.card a {
+  color: #000;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #fff;
+}
+
+.raw-text-data-entry {
+  /* display: none; */
+  max-width: 800px;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.container__raw-text {
+  /* margin-top: 4rem; */
+  /* background: #fff; */
+}
+
+h1.page-heading {
+  margin-bottom: 1.5rem;
+}
+
+h1.page-heading .fa {
+  background: #eee;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+span.ai {
+  font-family: monospace;
+}
+
+textarea {
+  min-height: 20rem;
+}
+
+.raw-text-length-meter {
+  margin-top: 1rem;
+}
+
+.progress {
+  margin-bottom: 1rem;
+  height: auto;
+}
+
+.progress-bar {
+  padding: 0.25rem 0.5rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.icon-loading-wrapper {
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.icon-loading-status {
+  position: absolute;
+  border-radius: 5px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -160px;
+  margin-left: -100px;
+  text-align: center;
+  background: #fff;
+  padding: 1rem;
+  font-size: 0.75rem;
+}
+
+.icon-loading-status img {
+  width: 100%;
+}
+
+.results-wrapper {
+  /* margin-top: -90px; */
+}
+
+.icon-brain-container {
+  position: relative;
+  max-width: 100px;
+  margin: auto;
+  z-index: 1;
+}
+
+.results-container {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.source-text-btn {
+  margin-bottom: 4rem;
+}
+
+.summary-text {
+  /* text-align: justify; */
+}
+
+.result-strength-container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.icon-brain {
+  position: relative;
+  max-width: 150px;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.analysis-strength {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 37%;
+  z-index: 2;
+}
+
+.analysis-strength .badge {
+  padding: 0.25rem 1rem;
+  font-weight: 600;
+  background: #000;
+  color: #fff;
+}
+
+.analysis-strength .analysis-weak {
+  background: #dc3545;
+}
+
+.analysis-strength .analysis-moderate {
+  background: #f4c242;
+}
+
+.analysis-strength .analysis-strong {
+  background: #27a81e;
+}
+
+.analysis-strength .analysis-very-strong {
+  background: #055b00;
+}
+
+.analysis-strength-toolip {
+  font-size: 12px;
+}
+
+.result-msg {
+  margin-top: 1rem;
+}
+
+.summary-list {
+  font-size: 14px;
+}
+
+.summary-list .fa {
+  margin-right: 5px;
+}
+
+.summary-list-likely .fa,
+.lead-likely {
+  color: #28a745;
+}
+
+.summary-list-unlikely .fa,
+.lead-unlikely {
+  color: #dc3545;
+}
+
+.plot-wrapper {
+  padding: 2rem 2rem;
+  color: #fff;
+
+  background: #355c7d; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #c06c84,
+    #6c5b7b,
+    #355c7d
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.plot-wrapper-needs {
+  background: #67b26f; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #67b26f,
+    #4ca2cd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #67b26f,
+    #4ca2cd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.plot-wrapper-values {
+  background: #4776e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #8e54e9,
+    #4776e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #8e54e9,
+    #4776e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.plot-contents {
+  max-width: 1400px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.plot-contents h1 {
+  font-size: 4.5rem;
+  font-weight: 100;
+}
+
+.plot-wrapper small {
+  display: block;
+}
+
+.plot-wrapper ol,
+.plot-wrapper ul {
+  font-weight: 100;
+  padding-left: 1rem;
+}
+
+.plot-wrapper strong {
+  font-weight: 600;
+}
+
+.plot-description {
+  max-width: 600px;
+  margin: auto;
+}
+
+.plot-facets {
+  justify-content: center;
+}
+
+.plot-facet {
+  margin-bottom: 3rem;
+}
+
+.plot-facet:last-child {
+  margin-bottom: 0;
+}
+
+.plot-description-facet {
+  max-width: 500px;
+  margin: auto;
+  font-size: 14px;
+}
+
+.plot-description-facet ul {
+  margin-top: 1rem;
+}
+.plot-description-facet li {
+  margin-bottom: 1rem;
+}
+
+.nav-tabs {
+  justify-content: center;
+}
+
+.nav-tabs .nav-item {
+  cursor: pointer;
+}
+
+.tab-content {
+  background: #fff;
+}
+
+.wrapper-consumer-pref {
+  max-width: 800px;
+  margin: auto;
+}
+
+.wrapper-consumer-pref h4 {
+  padding-top: 4rem;
+}
+
+.wrapper-consumer-pref table {
+  margin: 1rem 0;
+}
+
+.wrapper-consumer-pref table tr {
+  border: 0.25rem solid #fff;
+}
+
+.score {
+  text-align: right;
+}
+
+.score .fa {
+  font-size: 1.45rem;
+}
+
+.twitter-wrapper {
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.twitter-screen-name {
+  border-right: 0;
+}
+
+.twitter-handle-submit {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.footer {
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: fixed;
+  bottom: 0;
+  padding: 1rem 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+}
+
+.footer a {
+  color: #fff;
+}
