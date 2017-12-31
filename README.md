@@ -4,6 +4,8 @@
 
 This application is inspired by IBM's [Personality Insights demo](https://personality-insights-demo.ng.bluemix.net). Built entirely in React, this project not only put my React skills to test but also gave me the opportunity to learn more about [this fascinating service](https://console.bluemix.net/docs/services/personality-insights/index.html).
 
+[Live Demo](http://personality-insights.shahabqamar.com/)
+
 ## Installation
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
