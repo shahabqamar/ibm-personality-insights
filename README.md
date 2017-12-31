@@ -1,5 +1,7 @@
 # I told my therapist about you ...
 
+> Gain insight into how and why people think, act, and feel the way they do. The underlying AI applies linguistic analytics and personality theory to infer attributes from a person's unstructured text or Twitter feed.
+
 This application is inspired from IBM's [Personality Insights demo](https://personality-insights-demo.ng.bluemix.net). Built entirely in React, it was a weekend excercise to not only put my React skills to test but also learn the in's and out's of [this fascinating service](https://console.bluemix.net/docs/services/personality-insights/index.html).
 
 ## Installation
