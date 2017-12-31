@@ -11,6 +11,7 @@ import {
   ModalBody,
   ModalFooter
 } from "reactstrap";
+import Icon from "react-fontawesome";
 import ResultsStrength from "../components/ResultsStrength";
 import ResultsSummary from "../components/ResultsSummary";
 import ResultsBigFive from "../components/ResultsBigFive";
@@ -51,10 +52,19 @@ class Results extends Component {
   render() {
     return (
       <div className="results-wrapper">
+        <Button
+          color="secondary"
+          size="sm"
+          onClick={this.props.tryAgain.bind(this)}
+          className="btn-try-again"
+        >
+          <Icon name="repeat" /> Try Again
+        </Button>
         <ResultsStrength
           wordCount={this.props.resultData["word_count"]}
           warnings={this.props.resultData["warnings"]}
         />
+
         <ResultsSummary resultData={this.props.resultData} />
         <div className="raw-text-modal">
           <div className="text-center source-text-btn">

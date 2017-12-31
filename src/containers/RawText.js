@@ -21,6 +21,7 @@ class RawText extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.tryAgain = this.tryAgain.bind(this);
   }
 
   focusInput(component) {
@@ -96,6 +97,19 @@ class RawText extends Component {
       );
   }
 
+  tryAgain() {
+    this.setState({
+      rawTextContent: "",
+      wordCount: "0",
+      submitColor: "secondary",
+      submitDisallow: true,
+      fetchingData: false,
+      loadingmsg: "",
+      responseDataRecieved: false,
+      responseData: {}
+    });
+  }
+
   render() {
     return (
       <div>
@@ -139,6 +153,7 @@ class RawText extends Component {
             <Results
               resultData={this.state.responseData}
               rawText={this.state.rawTextContent}
+              tryAgain={this.tryAgain}
             />
           )}
         </div>

@@ -509,3 +509,8 @@ textarea {
 .footer a {
   color: #fff;
 }
+
+.btn-try-again {
+  position: absolute;
+  right: 2rem;
+}

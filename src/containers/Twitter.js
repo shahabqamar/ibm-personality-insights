@@ -29,6 +29,7 @@ class Twitter extends Component {
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.tryAgain = this.tryAgain.bind(this);
   }
 
   handleChange(event) {
@@ -137,6 +138,20 @@ class Twitter extends Component {
         }.bind(this)
       );
   }
+
+  tryAgain() {
+    this.setState({
+      rawTextContent: "",
+      wordCount: "0",
+      submitColor: "secondary",
+      submitDisallow: true,
+      fetchingData: false,
+      loadingmsg: "",
+      responseDataRecieved: false,
+      responseData: {}
+    });
+  }
+
   render() {
     return (
       <div>
@@ -177,6 +192,7 @@ class Twitter extends Component {
           <Results
             resultData={this.state.responseData}
             rawText={this.state.rawTextContent}
+            tryAgain={this.tryAgain}
           />
         )}
       </div>
