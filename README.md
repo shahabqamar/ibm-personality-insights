@@ -16,3 +16,13 @@ yarn start
 ```
 
 You will need a companion PHP server to communicate with Watson and Twitter API. The code for the companion server is located in the php-api folder. Replace all REDACTED values with your own Watson and Twitter API keys, Access Tokens, etc. Finally, point the React App to this server by updating the REACT_APP_WATSON_API_ENDPOINT variable in .env file located in the root folder.
+
+## Screenshots
+
+![alt text](http://personality-insights.shahabqamar.com/screenshots/home.png "Home")
+
+![alt text](http://personality-insights.shahabqamar.com/screenshots/raw-text.png "Raw text input")
+
+![alt text](http://personality-insights.shahabqamar.com/screenshots/twitter.png "Twitter feed input")
+
+![alt text](http://personality-insights.shahabqamar.com/screenshots/results.png "Raw text input")
