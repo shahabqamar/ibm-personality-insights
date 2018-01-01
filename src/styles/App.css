@@ -106,10 +106,24 @@ p {
   border-radius: 0;
 }
 
+.card button {
+  border: 1px solid #000;
+  color: #000;
+}
+
 .card:hover {
   transition: 0.25s all;
   background: #333;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 20px 0px;
+}
+
+.card:hover button {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.card button:hover {
+  background: transparent;
 }
 
 .card-raw-text:hover {

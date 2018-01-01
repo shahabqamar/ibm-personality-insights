@@ -7,7 +7,8 @@ import {
   CardTitle,
   Container,
   Row,
-  Col
+  Col,
+  Button
 } from "reactstrap";
 import Header from "../components/Header";
 import Icon from "react-fontawesome";
@@ -31,6 +32,7 @@ class SourceSelect extends Component {
                       you're interested in. It should contain words about every
                       day experiences, thoughts, and responses.
                     </CardText>
+                    <Button outline>Select</Button>
                   </NavLink>
                 </CardBody>
               </Card>
@@ -47,6 +49,7 @@ class SourceSelect extends Component {
                       Twitter handle only. The app will curate the most recent
                       tweets &amp; replies for creating a personality profile.
                     </CardText>
+                    <Button outline>Select</Button>
                   </NavLink>
                 </CardBody>
               </Card>
