@@ -28,3 +28,5 @@ You will need a companion PHP server to communicate with Watson and Twitter API.
 ![alt text](http://personality-insights.shahabqamar.com/screenshots/twitter.png "Twitter feed input")
 
 ![alt text](http://personality-insights.shahabqamar.com/screenshots/results.png "Raw text input")
+
+[![Run on Repl.it](https://repl.it/badge/github/shahabqamar/ibm-personality-insights)](https://repl.it/github/shahabqamar/ibm-personality-insights)
